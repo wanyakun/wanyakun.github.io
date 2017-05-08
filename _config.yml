@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+title: 坤坤同学
+description: '不积跬步无以至千里'
+url: 'https://wanyakun.github.io'
+baseurl: '/' 
+google_analytics: 'UA-73111312-1'
+disqus_shortname: 'wanyakun'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'wanyakun'
+  email: yakun.wan@gmail.com
+  twitter_username: wanyakun
+  facebook_username: wanyakun
+  github_username:  wanyakun
+  linkedin_username:  wanyakun
 
 defaults:
   -
