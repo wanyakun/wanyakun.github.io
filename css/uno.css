@@ -34,8 +34,22 @@ q:before, q:after {
 	content: none; }
 
 table {
+	width: 100%;
 	border-collapse: collapse;
-	border-spacing: 0; }
+	border-spacing: 0;
+	border: 1px solid #ddd; }
+
+th {
+	text-align: -webkit-left;
+	font-weight: bold;
+	border: 1px solid #ddd; }
+
+td {
+	border: 1px solid #ddd; }
+
+table th, td, tr {
+	padding: 8px;
+}
 
 body {
 	width: 100%;
@@ -1214,8 +1228,8 @@ hr {
 	background-size: cover; }
 
 .panel-cover--collapsed {
-	width: 40%;
-	max-width: 530px; }
+	width: 30%;
+	max-width: 700px; }
 
 .panel-cover--overlay {
 	display: block;
