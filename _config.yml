@@ -1,7 +1,7 @@
 # Site settings
 title: 坤坤同学
 description: '不积跬步无以至千里'
-url: 'https://wanyakun.github.io'
+url: 'http://www.aioser.com'
 baseurl: '/' 
 google_analytics: 'UA-73111312-1'
 disqus_shortname: 'wanyakun'
@@ -9,8 +9,9 @@ disqus_shortname: 'wanyakun'
 author:
   name: 'wanyakun'
   email: yakun.wan@gmail.com
-  twitter_username: wanyakun
-  facebook_username: wanyakun
+  weibo_username: wanyakun
+  twitter_username: YakunWan
+  facebook_username: wanyakun666
   github_username:  wanyakun
   linkedin_username:  wanyakun
 

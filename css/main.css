@@ -1,5 +1,6 @@
 @import url(uno.css);
-@import url(monokai.css);
+/*@import url(monokai.css);*/
+@import url(tomorrow.css);
 
 /* Modifications */
 
@@ -53,4 +54,12 @@ pre.highlight code,
   height: 100px;
   border: 3px solid #fff;
   border-radius:100%;
+}
+
+.btn-border-small {
+    border: 1px solid #BF1827;
+    border-radius: 20px;
+    padding: 6px 8px;
+    font-size: .8em;
+    margin-left: 10px;
 }
