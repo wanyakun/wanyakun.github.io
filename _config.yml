@@ -11,3 +11,22 @@ collections:
 source: src
 destination: dist
 permalink: "/:categories/:title"
+
+# Files to exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+  - dev
+  - .tern-project
+  - .DS_Store
+  - design
+
+keep_files:
+  - .git
+  - .gitignore
+
+  # Build settings
+markdown: kramdown
+plugins:
+  - jekyll-pug
