@@ -1,8 +1,8 @@
 ---
 title: iOS调度源
-date: 2016-12-20 14:08:43
 tags: [iOS, GCD]
-cateogries: [iOS]
+categories: [iOS]
+date: 2016-12-20 14:08:43
 layout: post
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: NavigationBar不显示问题
-tags: [iOS]
-categories: [iOS, 优化]
+tags: [iOS, 优化]
+categories: [iOS]
 date: 2016-04-13 13:40:00
 layout: post
 ---

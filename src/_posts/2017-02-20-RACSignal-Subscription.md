@@ -1,8 +1,8 @@
 ---
 title:  一张图理解RACSignal的Subscription过程
-date: 2017-02-20 16:46:00
 tags: [iOS, RAC]
 categories: [iOS]
+date: 2017-02-20 16:46:00
 layout: post
 ---
 

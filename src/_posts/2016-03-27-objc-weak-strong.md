@@ -1,8 +1,8 @@
 ---
 title: ObjC的Block中使用weakSelf/strongSelf @weakify/@strongify
-date: 2016-03-27 14:09:00
 tags: [iOS, Block]
 categories: [iOS]
+date: 2016-03-27 14:09:00
 layout: post
 ---
 

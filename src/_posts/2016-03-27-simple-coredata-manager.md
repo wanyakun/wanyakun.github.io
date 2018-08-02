@@ -1,8 +1,8 @@
 ---
 title: 自己写简单CoreDataManager封装对CoreData操作
-date: 2016-03-27 14:54:29
 tags: [iOS, CoreData]
 categories: [iOS]
+date: 2016-03-27 14:54:29
 layout: post
 ---
 

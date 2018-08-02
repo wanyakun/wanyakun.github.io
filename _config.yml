@@ -25,6 +25,7 @@ exclude:
 keep_files:
   - .git
   - .gitignore
+  - CNAME
 
   # Build settings
 markdown: kramdown
