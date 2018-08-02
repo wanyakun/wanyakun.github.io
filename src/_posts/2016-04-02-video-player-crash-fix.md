@@ -6,7 +6,6 @@ date: 2016-04-02 08:42:00
 layout: post
 ---
 
-### 前言
 昨天看在[听云](https://report.tingyun.com/mobile/overview/mobile)上的Crash记录，看到我们App中有和视频播放相关的Crash。昨天就点了几次发现从视频播放进入产品详情，并进行商品购物下单，最后从订单详情返回到购物车的时候App Crash。操作轨迹如下：
 
 *VideoViewController -> VideoDetailViewController -> ProductItemDetailViewController -> UCYWebViewController（结算页）-> PayWayViewController -> UCYWebViewController（订单详情页）-> UCYTabBarController（并选中购物车tab）-> UCYWebViewController(购物车) -> App Crash*

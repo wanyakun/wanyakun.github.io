@@ -6,7 +6,7 @@ date: 2016-03-20 22:20:00
 layout: post
 ---
 
-在我们的app的业务层中使用了MVVM架构，为了更好的实现MVVM，我们在CocoaPods中引入了[ReactiveCocoa](https://github.com/CocoaPods/CocoaPods)， 这样就会大量使用Block，很多时候Block也的确比Delegate，Target-Action使用起来要方便，顺便再推荐个第三方类库[BlocksKit](https://github.com/zwaldowski/BlocksKit)，但是在使用Block的时候最容易出现的问题就是循环引用，就循环引用的问题，循环引用危害非常大，controller中只要有循环引用出现，就controller就无法释放，导致app使用内存越来越大。
+在我们的app的业务层中使用了MVVM架构，为了更好的实现MVVM，我们在CocoaPods中引入了[ReactiveCocoa](https://github.com/CocoaPods/CocoaPods)， 这样就会大量使用Block，很多时候Block也的确比Delegate，Target-Action使用起来要方便。顺便再推荐个第三方类库[BlocksKit](https://github.com/zwaldowski/BlocksKit)，但是在使用Block的时候最容易出现的问题就是循环引用，就循环引用的问题，循环引用危害非常大，controller中只要有循环引用出现，就controller就无法释放，导致app使用内存越来越大。
 
 ## 循环引用出现的原因
 
