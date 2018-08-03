@@ -1,0 +1,17 @@
+---
+layout: base
+title: Blogs
+permalink: /blogs/
+---
+
+.container#blog_roll
+  .row
+      | {% for post in site.posts %}
+      .col.s12.m6
+        .card.white
+          .card-content
+            span.card-title {{post.title}}
+            p {{post.excerpt}}
+          .card-action
+            a(href='{{post.url}}') Read More
+      | {% endfor %}
