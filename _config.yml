@@ -10,7 +10,7 @@ collections:
     output: true
 source: src
 destination: dist
-permalink: "/:categories/:title"
+permalink: "/:categories/:title.html"
 
 # Files to exclude
 exclude:
