@@ -10,7 +10,7 @@ layout: post
 
 通过下面一张图理解RACSignal的调用过程：
 
-![RAC](http://kunkun.qiniudn.com/RAC.png?imageView2/2/w/1000)
+![RAC](http://file.aioser.com/RAC.png?imageView2/2/w/1000)
 
 ## 创建signale
 RACSignal通过子类[RACDynamicSignal createSignal:]方法获得Signal，并将disSubscribe这个block保存在Signal中。

@@ -18,13 +18,13 @@ layout: post
 
 但是在很多情况下，我们会发现Cell之间仍然有一个不知道怎么产生的间距。如下图所示在吃货团和果U鲜直接有一条竖线，而果U鲜和登录直接就没有，而我们想实现的是Cell之间的间距为0，这里itemSize的width设置为ScreeWidth/4.0f，minimumInteritemSpacing设置为0。
 
-![有间距](http://kunkun.qiniudn.com/collectionView-01.jpg)
+![有间距](http://file.aioser.com/collectionView-01.jpg)
 
 首先我们使用view hierarchy来看看Cell的位置和大小如下图。
 
-![Cell位置](http://kunkun.qiniudn.com/collectionView-03.jpg)
+![Cell位置](http://file.aioser.com/collectionView-03.jpg)
 
-![Cell位置](http://kunkun.qiniudn.com/collectionView-04.jpg)
+![Cell位置](http://file.aioser.com/collectionView-04.jpg)
 
 从两张图的Position X可以看出两个Cell的位置，因为Anchor Poin x是0.5，所以显示的是图片中间的位置，第一个Cell的为51.75，第二个Cell的为155.4166666666666667，两者的间距为103.6666666666666667，而Cell的宽度为103.5，也就是说间距比宽度大了0.1666666666666667，所以出现了间隙。
 
@@ -88,5 +88,5 @@ layout: post
 
 再次运行，解决间隙问题，效果如下：
 
-![最终效果](http://kunkun.qiniudn.com/collectionView-02.jpg)
+![最终效果](http://file.aioser.com/collectionView-02.jpg)
 

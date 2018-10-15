@@ -16,7 +16,7 @@ layout: post
 
 ### Crash报告
 
-![Crash报告](http://kunkun.qiniudn.com/QQ20160413-1@2x.png)
+![Crash报告](http://file.aioser.com/QQ20160413-1@2x.png)
 
 从上面的图片 Crash的地方可以看出原因为Hybrid页面调用Native的返回根目录，并选中指定的TabBarItem。
 

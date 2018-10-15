@@ -15,7 +15,7 @@ layout: post
 重现问题步骤：当我们在打开App产品列表，加载产品缩略图，加载几屏幕后，然后反复点进不同产品进入详情，加载产品大图。导致内存使用暴涨。
 
 经过上面的，操作我们发现App使用的内存暴涨，贴下**Instrument**图片一看究竟。
-![](http://kunkun.qiniudn.com/QQ20160319-0@2x.png)
+![](http://file.aioser.com/QQ20160319-0@2x.png)
 通过上面这张图片可以看到，All Anoymous VM达到137MB，主要为VM:CG raster data导致，已经到了109.30MB。
 经过反复查询，确实是SDWebImage导致的VM:CG raster data暴涨的。去SDWebImage的issues查询，发现询问这个问题人挺多，详见：https://github.com/rs/SDWebImage/issues/538
 
@@ -68,5 +68,5 @@ layout: post
 ```
 
 经过对SDWebImage设置处理之后，内存使用量远远下降了，贴张图看看处理后的效果。
-![](http://kunkun.qiniudn.com/QQ20160319-1@2x.png)
+![](http://file.aioser.com/QQ20160319-1@2x.png)
 
