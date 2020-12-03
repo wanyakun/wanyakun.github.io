@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>自定义返回根目录Crash | 坤坤同学</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="自定义返回根目录Crash" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="上个版本经过内存等方面的优化，在听云崩溃报告中已经成功将Crash率降低到8‰一下，看了下最新版本七日的Crash率在4.87‰，终于达到标准水平了。下面是听云崩溃率标准：" />
+<meta property="og:description" content="上个版本经过内存等方面的优化，在听云崩溃报告中已经成功将Crash率降低到8‰一下，看了下最新版本七日的Crash率在4.87‰，终于达到标准水平了。下面是听云崩溃率标准：" />
+<link rel="canonical" href="http://localhost:4000/ios/2016/04/14/customer-pop-to-root-crash-md.html" />
+<meta property="og:url" content="http://localhost:4000/ios/2016/04/14/customer-pop-to-root-crash-md.html" />
+<meta property="og:site_name" content="坤坤同学" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-04-14T00:34:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="自定义返回根目录Crash" />
+<script type="application/ld+json">
+{"headline":"自定义返回根目录Crash","dateModified":"2016-04-14T00:34:00+08:00","datePublished":"2016-04-14T00:34:00+08:00","url":"http://localhost:4000/ios/2016/04/14/customer-pop-to-root-crash-md.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ios/2016/04/14/customer-pop-to-root-crash-md.html"},"description":"上个版本经过内存等方面的优化，在听云崩溃报告中已经成功将Crash率降低到8‰一下，看了下最新版本七日的Crash率在4.87‰，终于达到标准水平了。下面是听云崩溃率标准：","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="坤坤同学" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">坤坤同学</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">自定义返回根目录Crash</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2016-04-14T00:34:00+08:00" itemprop="datePublished">Apr 14, 2016
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>上个版本经过内存等方面的优化，在听云崩溃报告中已经成功将Crash率降低到8‰一下，看了下最新版本七日的Crash率在4.87‰，终于达到标准水平了。下面是听云崩溃率标准：</p>
+
+<p><img src="http://articles.csdn.net/uploads/allimg/150420/125919D91-0.jpg" alt="听云提出的移动应用崩溃率标准" /></p>
+
+<blockquote>
+  <p>今天又发现了一个Crash，本以为是已经解决过的Crash，仔细一看，发现Crash的位置是一样的，但是引起的原因确实另外一个。</p>
+</blockquote>
+
+<h3 id="crash报告">Crash报告</h3>
+
+<p><img src="http://file.aioser.com/QQ20160413-1@2x.png" alt="Crash报告" /></p>
+
+<p>从上面的图片 Crash的地方可以看出原因为Hybrid页面调用Native的返回根目录，并选中指定的TabBarItem。</p>
+
+<h3 id="crash原因分析">Crash原因分析</h3>
+
+<p>之所以在这个地方出现Crash是因为：</p>
+
+<ul>
+  <li>Crash线程为WebThread，不是主线程。</li>
+  <li>PSPDFUIKitMainThreadGuard为检查是否在子线程更新UI，若有，在DEBUG状态下会Assert，我们可以直接找到在什么位置出现子线程更新UI，方便解决问题，在Release下就Crash了。</li>
+  <li>Crash之前WebThread执行[UILabel setTextColor]，在往下看会发现确实是在子线程更新了UI动作。找到Crash的原因了。</li>
+</ul>
+
+<h3 id="问题解决">问题解决</h3>
+
+<p>根据Crash报告可以看得出是因为在WebView中JavaScript调用Native方法，Native方法在子线程中执行，要解决这个问题，需要在Native方法中调用主线程，然后在主线程中执行相应的方法。</p>
+
+<p>代码修改前：</p>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">PopUtils</span> <span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>修改后：</p>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span> <span class="p">{</span>
+    <span class="n">dispatch_async</span><span class="p">(</span><span class="n">dispatch_get_main_queue</span><span class="p">(),</span> <span class="o">^</span><span class="p">{</span>
+        <span class="p">[</span><span class="n">PopUtils</span> <span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>这样就能保证在Native方法在主线程中执行。</p>
+
+<blockquote>
+  <p>问题看似解决，但是这样解决真的好吗？那万一别的地方也调用这个<strong>popToRootViewControllerWithSelectedIndex</strong>方法呢？如果也恰好是在子线程中调用，岂不是同意也会出现Crash。我们应该分析下这个popToRoot方法具体是怎么写的。看是不是要在这个方法中来做一些修改呢？</p>
+</blockquote>
+
+<p><strong>popToRootViewControllerWithSelectedIndex</strong>代码如下：</p>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span> <span class="p">{</span>
+    <span class="n">UITabBarController</span> <span class="o">*</span><span class="n">tabVC</span> <span class="o">=</span> <span class="p">(</span><span class="n">UITabBarController</span> <span class="o">*</span><span class="p">)[</span><span class="n">AppDelegate</span> <span class="nf">sharedAppDelegate</span><span class="p">].</span><span class="n">window</span><span class="p">.</span><span class="n">rootViewController</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">tabVC</span><span class="p">.</span><span class="n">viewControllers</span><span class="p">.</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">[</span><span class="n">tabVC</span> <span class="nf">setSelectedIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="p">[</span><span class="n">PopUtils</span> <span class="nf">popToRootViewController</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>而popToRootViewController方法只是获取Tabbar的所有Navigation并逐一popToRoot，并不会进行UI的修改，根据Crash报告，可以看出，其实问题就出在<strong>[tabVC setSelectedIndex:index]</strong>这句，设置选中的Index，tabbarItem会改变图片，改变文字的颜色等等，所以我们应该将这里的操作放到主线程中才对。</p>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">popToRootViewControllerWithSelectedIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span> <span class="p">{</span>
+    <span class="n">dispatch_async</span><span class="p">(</span><span class="n">dispatch_get_main_queue</span><span class="p">(),</span> <span class="o">^</span><span class="p">{</span>
+        <span class="n">UITabBarController</span> <span class="o">*</span><span class="n">tabVC</span> <span class="o">=</span> <span class="p">(</span><span class="n">UITabBarController</span> <span class="o">*</span><span class="p">)[</span><span class="n">AppDelegate</span> <span class="nf">sharedAppDelegate</span><span class="p">].</span><span class="n">window</span><span class="p">.</span><span class="n">rootViewController</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">tabVC</span><span class="p">.</span><span class="n">viewControllers</span><span class="p">.</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">tabVC</span> <span class="nf">setSelectedIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="p">[</span><span class="n">PopUtils</span> <span class="nf">popToRootViewController</span><span class="p">];</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>我这里将整个代码块都放到主线程中了。当然也可以只将<strong>[tabVC setSelectedIndex:index];</strong>这句放到主线程中</p>
+
+  </div><a class="u-url" href="/ios/2016/04/14/customer-pop-to-root-crash-md.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">坤坤同学</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">坤坤同学</li><li><a class="u-email" href="mailto:yakun.wan@gmail.com">yakun.wan@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/wanyakun"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">wanyakun</span></a></li><li><a href="https://www.twitter.com/wanyakun"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">wanyakun</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>佛系程序员，佛系摄影，佛系户外，佛系健身.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
