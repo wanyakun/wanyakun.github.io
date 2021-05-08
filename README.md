@@ -1,5 +1,7 @@
 # yk-blog-vue
 
+[![Deply Vue Blog to Github Pages On Master Branch](https://github.com/wanyakun/yk-blog-vue/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/wanyakun/yk-blog-vue/actions/workflows/deploy.yml)
+
 ## Project setup
 ```
 npm install
