@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "4609096af7f652f36ac4b47b9be9b9ec"
+    "revision": "10a4fba6ff8c7c6b1f0da624405ad085"
   },
   {
     "url": "assets/css/0.styles.994e4abf.css",
@@ -374,8 +374,8 @@ self.__precacheManifest = [
     "revision": "9d36b37e17d72d14db0d9b74575e344a"
   },
   {
-    "url": "assets/js/50.88976eac.js",
-    "revision": "f79af92d2739f437422f620c0642bc6f"
+    "url": "assets/js/50.7d91c8d8.js",
+    "revision": "1f1b7a9a598bfcb8f55d4964872cc128"
   },
   {
     "url": "assets/js/51.d835c9b6.js",
@@ -394,8 +394,8 @@ self.__precacheManifest = [
     "revision": "58f1ad16cf54f59c7cd0a3bc8e5bca5b"
   },
   {
-    "url": "assets/js/55.ab7080cd.js",
-    "revision": "421d4b3607ae6fa1706baf172657ee7c"
+    "url": "assets/js/55.5a6e1058.js",
+    "revision": "517fa867612e58b0a668bde5bfb79815"
   },
   {
     "url": "assets/js/56.d3ecfa5b.js",
@@ -454,8 +454,8 @@ self.__precacheManifest = [
     "revision": "f989940a6428b11f4f072b163b027e21"
   },
   {
-    "url": "assets/js/app.a4610b30.js",
-    "revision": "913e037443ac3d298e9419e77b15ded7"
+    "url": "assets/js/app.0d99226e.js",
+    "revision": "8158f30a2264fd7149e0912fa2d3041e"
   },
   {
     "url": "avatar.jpg",
@@ -467,163 +467,163 @@ self.__precacheManifest = [
   },
   {
     "url": "blogs/code/2016/2016-03-19-ios-memory-optimize.html",
-    "revision": "c5d6b1067b1a49a89fa5dba2b11b117e"
+    "revision": "9856663ffe1d3e49c74903cdf375e350"
   },
   {
     "url": "blogs/code/2016/2016-03-20-ios-memory-optimize-two.html",
-    "revision": "209a641ab3f81feddf2c3d9a3b0fd6e9"
+    "revision": "3c9a096006d16aaec9f7d9a491fd26be"
   },
   {
     "url": "blogs/code/2016/2016-03-21-ios-memory-optimize-three.html",
-    "revision": "a9eaa715047e0d31890db5735e7f64dd"
+    "revision": "e87033e4a17aecb3bbe9e20aef5e16aa"
   },
   {
     "url": "blogs/code/2016/2016-03-22-ios-memory-optimize-four.html",
-    "revision": "682d3fdac2778d3596e448195eead8ec"
+    "revision": "4dccc5a19eeb91b0379c3fbcc5f7ad67"
   },
   {
     "url": "blogs/code/2016/2016-03-27-objc-weak-strong.html",
-    "revision": "0004b91fd51b057c5db784c1afd5e89f"
+    "revision": "43b3b9c06de9fd1f912997844a417349"
   },
   {
     "url": "blogs/code/2016/2016-03-27-simple-coredata-manager.html",
-    "revision": "fa1c60cf5af4807131073fcd18003140"
+    "revision": "45f3b0032c504bb0594fd916e689d8ef"
   },
   {
     "url": "blogs/code/2016/2016-04-02-video-player-crash-fix.html",
-    "revision": "fcb8f798f017964128a8c84682881749"
+    "revision": "a769cdf5066f18a6254bf08f7a18117a"
   },
   {
     "url": "blogs/code/2016/2016-04-13-customer-pop-to-root-crash-md.html",
-    "revision": "41c77fcde1b744e3ebdae57d1a29b3e6"
+    "revision": "719a71729669e612d207b6301efc37f9"
   },
   {
     "url": "blogs/code/2016/2016-04-13-ios-navigation-bar-hidden.html",
-    "revision": "8890164a80379646efcd22d7bcd0e728"
+    "revision": "1e48e7a5e66856d2103b51f5a6b24a04"
   },
   {
     "url": "blogs/code/2016/2016-06-06-reactivecocoa-racobserve.html",
-    "revision": "ce7f0b27bb2bc5314951e5a09d3242e2"
+    "revision": "093e2a42550fdc62db34c811e576acdd"
   },
   {
     "url": "blogs/code/2016/2016-08-17-set-collectionview-cell-space.html",
-    "revision": "40ab27b2fdf9a0994bcfcac4357b4803"
+    "revision": "f72ffb7bf9f97a595632e952928ba42e"
   },
   {
     "url": "blogs/code/2016/2016-09-19-ios10-push-notification.html",
-    "revision": "4f1d5e367f75a3941b9518fb35a40b68"
+    "revision": "be07c3af060044f190d1650b3ae6d5b3"
   },
   {
     "url": "blogs/code/2016/2016-10-26-gcd-sync-async.html",
-    "revision": "4b044fb38bbbb5670b4cbbff790540d7"
+    "revision": "863f1757e9c3e3d8e748e7f68d1af2ed"
   },
   {
     "url": "blogs/code/2016/2016-11-11-kvc-principle-of-realization.html",
-    "revision": "ad9feb26efb03253564e59584996b44a"
+    "revision": "2adb7c8097ccbdd1c1b116f02a21ed2c"
   },
   {
     "url": "blogs/code/2016/2016-11-11-kvo-principle-of-realization.html",
-    "revision": "1cf60e0c51b1a37421f18e3cd173a2dd"
+    "revision": "99b401cecf66ff596f0a06b5d97daf48"
   },
   {
     "url": "blogs/code/2016/2016-11-22-gesture-recognizer.html",
-    "revision": "2b35fb464dc97b60e8461bd54b89584e"
+    "revision": "a8c3e15ead5a733d0920923c313b0d61"
   },
   {
     "url": "blogs/code/2016/2016-11-24-ios-event-transfer-and-respose-chain.html",
-    "revision": "e87fa305388fcc777b6070e584d331d0"
+    "revision": "2801e0eb7eb681738c01084aef539e63"
   },
   {
     "url": "blogs/code/2016/2016-12-06-ios-operation-queue.html",
-    "revision": "2fa640b42a399b50541ac2f09979649a"
+    "revision": "16096ac03ead4c946cc643763fdc937e"
   },
   {
     "url": "blogs/code/2016/2016-12-15-ios-dispatch-queue.html",
-    "revision": "a1b4a2361dad66cc3d9c2f274b3d0a05"
+    "revision": "e526cca46b68202f482103f599b98318"
   },
   {
     "url": "blogs/code/2016/2016-12-20-ios-dispatch-source.html",
-    "revision": "99d066e7f53e91d9f3b8e2b85779deef"
+    "revision": "2b69a643c260e7e3d1f1dda337f7de31"
   },
   {
     "url": "blogs/code/2017/2017-02-20-racsignal-subscription.html",
-    "revision": "2d8ccb18abbe6a1fa54d7ba2bd65520f"
+    "revision": "1687c40ee3ca70d6ea2d952c60a864e6"
   },
   {
     "url": "blogs/code/2017/2017-04-10-ios-architecture-design.html",
-    "revision": "6baedd3b7e1f6d0c5bad578ef60dd0e9"
+    "revision": "ccd5b2a7ac827a4db24f0bdd2d05b537"
   },
   {
     "url": "blogs/code/2017/2017-04-12-ios-modularization-reconsitution.html",
-    "revision": "28965cef1a5b631f1744e06f47028bdd"
+    "revision": "2bac4e9e912e97cd7f01bb7e12f64191"
   },
   {
     "url": "blogs/code/2017/2017-04-13-ios-private-pod-specs.html",
-    "revision": "4f401ef1467201134405ffa5e7d6c50d"
+    "revision": "e3c09ecc4f5dd31fac7955c42a20d750"
   },
   {
     "url": "blogs/code/2017/2017-04-25-ios-networking-type-chose.html",
-    "revision": "c850d9b66fb83f4e4d49863e30b251b8"
+    "revision": "869067abea54b2785317a47cfac38105"
   },
   {
     "url": "blogs/code/2017/2017-05-26-ios-ci-cd.html",
-    "revision": "fb31c500ed9afd23cc8f383bfcd5d9c7"
+    "revision": "e8289db49ee3bc426088a7b74e774dc2"
   },
   {
     "url": "blogs/code/2017/2017-06-30-ios-shell-project-plan.html",
-    "revision": "b98aa9eaf36fe1904a53d0ae435e8fc6"
+    "revision": "6968f36ed6b48526fd8c98b2770ba13b"
   },
   {
     "url": "blogs/code/2017/2017-07-19-ios-shell-project-execute.html",
-    "revision": "63862f05815dab10fabdec6ce03498b2"
+    "revision": "dd5665c52bdfe023c99514dbdb6d1108"
   },
   {
     "url": "blogs/code/2017/2017-08-21-ios-components-binary.html",
-    "revision": "ec41d9318ae8d25ec8b43717423cbffb"
+    "revision": "8cd83e26411f107f83748edb206d387f"
   },
   {
     "url": "blogs/code/2018/2018-02-16-year-end-summary-of-2017.html",
-    "revision": "ebd1d57185405f81b991b835f0ea6666"
+    "revision": "7f2853683b1e3df61f905744807ee9b4"
   },
   {
     "url": "blogs/code/2018/2018-06-26-sensitive-information-processing.html",
-    "revision": "6ace1ab683f9ea55c8d95441c9ba664b"
+    "revision": "839d359e7ec5e42c7026382ce829740c"
   },
   {
     "url": "blogs/code/2018/2018-07-16-app-config-center.html",
-    "revision": "38b32768eb883528ead2c2ce26226fcf"
+    "revision": "2bee72e14d1a6396eaf923828435df65"
   },
   {
     "url": "blogs/code/2018/2018-08-13-hybrid-res-loader.html",
-    "revision": "84cdcf8078faa329eab637d9ec4b593e"
+    "revision": "3422aac8c8de8821300a42c2ff1fb92d"
   },
   {
     "url": "blogs/code/2018/2018-10-31-ios-app-luanch-optimize.html",
-    "revision": "98d3d3ccd19e1ada9c1a74df21626c1b"
+    "revision": "aff6863e6a079813f4d6c091a25511b9"
   },
   {
     "url": "categories/index.html",
-    "revision": "076f3d72b99f7f57ed953008f416a6ae"
+    "revision": "c3a974cfe61b1452eb8b61ba00d64085"
   },
   {
     "url": "categories/iOS/index.html",
-    "revision": "2067f457fa9a2ecf045f404f14d9f83d"
+    "revision": "d37ca9fd85a21448f7d14a70d21ab277"
   },
   {
     "url": "categories/iOS/page/2/index.html",
-    "revision": "54dd3358547e4bcd8c48e8c93582b087"
+    "revision": "5c268eb74f78ed9c05def87ffe7ab1a1"
   },
   {
     "url": "categories/iOS/page/3/index.html",
-    "revision": "f1a060c91688b5335ede53020d32c51c"
+    "revision": "f6a515c136500d25a7f236e005d28906"
   },
   {
     "url": "categories/iOS/page/4/index.html",
-    "revision": "3933393bf45152039a94f5aa1415abeb"
+    "revision": "bf7707e3e0c31686732a5c306e2013fc"
   },
   {
     "url": "categories/Summary/index.html",
-    "revision": "a61d60b045c6ac1342877cb88355a0b7"
+    "revision": "268c4ffef341d3ef21430499849a856b"
   },
   {
     "url": "hero.png",
@@ -631,67 +631,67 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1ae982c472fa050a5315b9a990ef02e7"
+    "revision": "e52901e3590cbcb646ae2577a9e8c26a"
   },
   {
     "url": "ios/basic/index.html",
-    "revision": "74e08e31f5a8aaeb1dd41647921f5876"
+    "revision": "61517cc9974117e79f6b97674d862978"
   },
   {
     "url": "ios/basic/memory.html",
-    "revision": "b08b916ddae1a3753a0b34c2f9b7c44c"
+    "revision": "85fe8d113493234cc1c2c5164f2b2483"
   },
   {
     "url": "ios/basic/multithread/index.html",
-    "revision": "7eb3562e5524abec8a66582a2bab48dd"
+    "revision": "f5c040aa305e5af4f038def62260ff58"
   },
   {
     "url": "ios/basic/oc/block.html",
-    "revision": "9bf5ef3be3497608c72bfbde30ca6db1"
+    "revision": "87e3148f14136ec6091fb46f40476a49"
   },
   {
     "url": "ios/basic/oc/category-extension.html",
-    "revision": "af776e62493db2a8e17c0e526322fcbe"
+    "revision": "bfb5f1058277ead4e1ad6364f705e281"
   },
   {
     "url": "ios/basic/oc/index.html",
-    "revision": "74073c7b44c78cf9149e3fb676f9bb3a"
+    "revision": "bd43675cc992e68421c9ff2661140e73"
   },
   {
     "url": "ios/basic/oc/kvc.html",
-    "revision": "8afae68d6c852a9e7c9f22d7c8837990"
+    "revision": "7b297cf35c45d8ca83e76021809986ed"
   },
   {
     "url": "ios/basic/oc/kvo.html",
-    "revision": "a98b9b6a402609bcf1a2ae9df3a9d7d6"
+    "revision": "17fc20d278e715e610ea08fe9fb39a5a"
   },
   {
     "url": "ios/basic/oc/load-initialize.html",
-    "revision": "d9c5201536462e461c0ebbcf78fa6963"
+    "revision": "7907f6fbbdc0123aab7dd42bdc53eb20"
   },
   {
     "url": "ios/basic/oc/notification.html",
-    "revision": "ebb404a8d8ac6719f62ebf7c96e442f2"
+    "revision": "b23ab58db9fa14012c8a485d93aa7f48"
   },
   {
     "url": "ios/basic/optimization/index.html",
-    "revision": "62d88482e17b6813dda3f7c48ad23010"
+    "revision": "c306c9d00e1ea92ab11f5469ffdb657b"
   },
   {
     "url": "ios/basic/runloop.html",
-    "revision": "af2964fbdb86ab61f446d113d1be6bb6"
+    "revision": "8261f95952858538dc95435809a5b91f"
   },
   {
     "url": "ios/basic/runtime.html",
-    "revision": "9c1c2e815a475b99893fa8bf50a4abc8"
+    "revision": "0efd42bcf31bd108229927863f8451c3"
   },
   {
     "url": "ios/basic/ui/index.html",
-    "revision": "54c62ba3413c5ea05698bf7cb302978a"
+    "revision": "47dc56a5eabd6df8d9d50d6a833cb952"
   },
   {
     "url": "ios/index.html",
-    "revision": "e03b8ad8a9ede4e68bf72fd8d3cd5a26"
+    "revision": "14cdac63914cad036d6f2f1b03ca04fc"
   },
   {
     "url": "logo.png",
@@ -699,47 +699,47 @@ self.__precacheManifest = [
   },
   {
     "url": "notes/index.html",
-    "revision": "d68491bd251df14313981dc88daebf34"
+    "revision": "0174cfb9c25841ba1c233eeaf55a12fd"
   },
   {
     "url": "notes/native/app-quality.html",
-    "revision": "0f65739c1789ca1cab72881ba9ea71fe"
+    "revision": "fc4adb48e0f4e58c2d90fce4e4433977"
   },
   {
     "url": "notes/native/ios-component-version.html",
-    "revision": "b42ec73bb6d751d0b81caf0890ff3f01"
+    "revision": "e2a1e4a0ccd45ad22e8eb2e7a72ae9b6"
   },
   {
     "url": "notes/native/ios-plan.html",
-    "revision": "2434b0201bbd3a753412ac887a34aaed"
+    "revision": "883fd0d1fbdb3f9f930f7a5dd95ceff4"
   },
   {
     "url": "tag/index.html",
-    "revision": "c80669a97e26afefa322e597ffe82a40"
+    "revision": "07aa238bb365029b2abf16f8282bb61e"
   },
   {
     "url": "tag/iOS/index.html",
-    "revision": "8778e3a519968f49b7670d84fda6f954"
+    "revision": "64071cd50e0c8a6495a1ec27c494d5ed"
   },
   {
     "url": "tag/iOS/page/2/index.html",
-    "revision": "17477b36ba4533b38866c9c8992355ce"
+    "revision": "d522bd6905fdc9f77c206afb0ef0d052"
   },
   {
     "url": "tag/iOS/page/3/index.html",
-    "revision": "7854c028e741c3115ae5ddea6c25b41e"
+    "revision": "0fec48ae2077f2b432e5c3571bdc1eb5"
   },
   {
     "url": "tag/iOS/page/4/index.html",
-    "revision": "7bcf77e5039450abc657e62f659493f2"
+    "revision": "9b65d9fe5a9839d68f545d5ee33b362d"
   },
   {
     "url": "tag/Summary/index.html",
-    "revision": "6c4b89eb683267ce6f24020d52ddad94"
+    "revision": "e0a903e2b7389e1d8de6ddd383af8763"
   },
   {
     "url": "timeline/index.html",
-    "revision": "40c9f08ce011607ff43588cdad0f22a9"
+    "revision": "e2d09bf8be283df9d18a4f92310509a1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
